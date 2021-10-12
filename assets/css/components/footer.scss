@@ -1,0 +1,24 @@
+footer .nav-link,
+section .nav-link {
+	transition: opacity 0.2s linear;
+}
+
+footer .nav-link:not(.active):not(.disabled):not(:hover),
+section .nav-link:not(.active):not(.disabled):not(:hover) {
+	opacity: 0.5;
+}
+
+footer .nav-link .icon,
+section .nav-link .icon {
+	transform: translate3d(0, 0, 0);
+}
+
+footer .nav-link[aria-expanded='true'],
+section .nav-link[aria-expanded='true'] {
+	opacity: 1 !important;
+}
+
+footer:not(.text-light) .nav-link,
+section:not(.text-light) .nav-link {
+	color: #121212;
+}

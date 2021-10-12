@@ -1,0 +1,111 @@
+label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+.label-spacer {
+	margin-right: $spacer / 3;
+}
+
+.label-animated-secondary {
+	--text: var(--secondary);
+	--shadow: 0 2px 8px -1px rgba($secondary, .32);
+	--shadow-hover: 0 4px 20px -2px rgba($secondary, 0.5);
+}
+.label-animated-primary {
+	--text: var(--primary);
+	--shadow: 0 2px 8px -1px rgba($primary, 0.04);
+	--shadow-hover: 0 4px 20px -2px rgba($primary, 0.12);
+}
+
+.sm-label-animated {
+	--font-size: 0.875rem;
+}
+.md-label-animated {
+	--font-size: 1rem;
+}
+.lg-label-animated {
+	--font-size: 1.25rem;
+}
+.label-animated {
+	--text: var(--dark);
+	--duration: 0.45s;
+	--move-hover: -4px;
+	--font-shadow: var(--font-size);
+	display: flex;
+	letter-spacing: 1px;
+	color: var(--text);
+	transform: translateY(var(--y)) translateZ(0);
+	transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+	line-height: var(--font-size);
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	overflow: visible;
+}
+.label-animated-bg {
+	--shadow: 0 2px 8px -1px rgba(18, 18, 18, 0.32);
+	--shadow-hover: 0 4px 20px -2px rgba(18, 18, 18, 0.5);
+	box-shadow: var(--shadow);
+}
+.label-animated-fast {
+	--duration: 0.32s;
+}
+.label-animated-reverse {
+	--font-shadow: calc(var(--font-size) * -1);
+}
+.label-animated-reverse:hover span {
+	--m: calc(var(--font-size));
+}
+.label-animated div {
+	display: flex;
+	overflow: hidden;
+	text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+.label-animated div span {
+	display: block;
+	backface-visibility: hidden;
+	font-style: normal;
+	transition: transform var(--duration) ease;
+	transform: translateY(var(--m)) translateZ(0);
+}
+.label-animated div span:nth-child(1) {
+	transition-delay: 0.05s;
+}
+.label-animated div span:nth-child(2) {
+	transition-delay: 0.1s;
+}
+.label-animated div span:nth-child(3) {
+	transition-delay: 0.15s;
+}
+.label-animated div span:nth-child(4) {
+	transition-delay: 0.2s;
+}
+.label-animated div span:nth-child(5) {
+	transition-delay: 0.25s;
+}
+.label-animated div span:nth-child(6) {
+	transition-delay: 0.3s;
+}
+.label-animated div span:nth-child(7) {
+	transition-delay: 0.35s;
+}
+.label-animated div span:nth-child(8) {
+	transition-delay: 0.4s;
+}
+.label-animated div span:nth-child(9) {
+	transition-delay: 0.45s;
+}
+.label-animated div span:nth-child(10) {
+	transition-delay: 0.5s;
+}
+.label-animated div span:nth-child(11) {
+	transition-delay: 0.55s;
+}
+.label-animated:hover {
+	--y: var(--move-hover);
+	--shadow: var(--shadow-hover);
+}
+.label-animated:hover span {
+	--m: calc(var(--font-size) * -1);
+}

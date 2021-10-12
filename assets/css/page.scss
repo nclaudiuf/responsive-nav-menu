@@ -1,0 +1,136 @@
+@import './theme.scss';
+
+body {
+	min-height: 72vh;
+}
+
+a.hover-effect:hover,
+img.hover-effect:hover,
+button.hover-effect:hover {
+	opacity: 0.75 !important;
+}
+
+.hero-image-overlay {
+	top: 10%;
+	right: 8%;
+	z-index: -1;
+}
+.hero-image-overlay img {
+	opacity: 0.25;
+	position: fixed;
+}
+@media only screen and (max-width: 768px) {
+	.hero-image-overlay {
+		right: -6%;
+		top: 6%;
+	}
+	.hero-image-overlay img {
+		opacity: 0.15 !important;
+		width: 80%;
+		height: auto;
+	}
+}
+
+.wave-line {
+	display: block;
+}
+
+/* Content */
+.content {
+	transform: scale(1);
+}
+
+.content--scaleDown {
+	-webkit-animation: content--scaleDown 450ms ease 0s 1 normal forwards;
+	animation: content--scaleDown 450ms ease 0s 1 normal forwards;
+}
+.content--Fallback {
+	-webkit-animation: content--Fallback 450ms ease 0s 1 normal forwards;
+	animation: content--Fallback 450ms ease 0s 1 normal forwards;
+}
+.img--scaleUp {
+	-webkit-animation: img--scaleUp 450ms ease 0s 1 normal forwards;
+	animation: img--scaleUp 450ms ease 0s 1 normal forwards;
+}
+.img--Fallback {
+	-webkit-animation: img--Fallback 450ms ease 0s 1 normal;
+	animation: img--Fallback 450ms ease 0s 1 normal;
+}
+
+@keyframes content--scaleDown {
+	0% {
+		transform: scale(1);
+		transform-origin: center;
+		opacity: 1;
+		z-index: 3;
+	}
+	100% {
+		transform: scale(0.86);
+		transform-origin: 54% 42%;
+		opacity: 0.5;
+		z-index: 1;
+	}
+}
+@keyframes content--Fallback {
+	0% {
+		transform: scale(0.86);
+		transform-origin: 54% 42%;
+		opacity: 0.5;
+		z-index: 1;
+	}
+	100% {
+		transform: scale(1);
+		transform-origin: center;
+		opacity: 1;
+		z-index: 3;
+	}
+}
+
+@keyframes img--scaleUp {
+	0% {
+		transform: scale(1);
+		transform-origin: center;
+		opacity: 0.25;
+		z-index: 1;
+	}
+	100% {
+		transform: scale(1.12);
+		transform-origin: 51.2% 54%;
+		opacity: 0.5;
+		z-index: 3;
+	}
+}
+@keyframes img--Fallback {
+	0% {
+		transform: scale(1.12);
+		transform-origin: 51.2% 54%;
+		opacity: 0.5;
+		z-index: 3;
+	}
+	100% {
+		transform: scale(1);
+		transform-origin: center;
+		opacity: 0.25;
+		z-index: 1;
+	}
+}
+
+/* Socaial Buttons */
+.social-wrapper {
+	top: 40%;
+	left: 0;
+}
+
+.social-wrapper li a {
+	color: rgba($secondary, .75);
+}
+.social-wrapper li a:hover, .social-wrapper li:hover a {
+	color: rgba($secondary, .45);
+}
+
+.list-group .list-group-item div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}

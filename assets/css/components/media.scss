@@ -1,0 +1,56 @@
+.image-collage {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.image-collage > a {
+	z-index: 1;
+	position: relative;
+	transition: transform 0.1s linear;
+}
+
+.image-collage > a:nth-child(1),
+.image-collage > a:nth-child(3) {
+	position: absolute;
+	z-index: 2;
+}
+
+.image-collage > a:nth-child(1) img,
+.image-collage > a:nth-child(3) img {
+	max-width: 345px;
+}
+
+.image-collage > a:nth-child(1) {
+	top: -3rem;
+	right: 0;
+	transform: rotateZ(10deg);
+}
+
+.image-collage > a:nth-child(1):hover {
+	transform: rotateZ(12deg) translate3d(0, -10px, 0);
+}
+
+.image-collage > a:nth-child(3) {
+	transform: rotateZ(-10deg);
+	bottom: -3rem;
+	left: 0;
+}
+
+.image-collage > a:nth-child(3):hover {
+	transform: rotateZ(-12deg) translate3d(0, -10px, 0);
+}
+
+.image-collage > a:nth-child(2) img {
+	max-width: 384px;
+}
+
+.image-collage > a:nth-child(2):hover {
+	transform: rotateZ(-2deg) translate3d(0, -10px, 0);
+}
+
+@media (max-width: 991.98px) {
+	.image-collage > a:nth-child(2) img {
+		max-width: 100%;
+	}
+}

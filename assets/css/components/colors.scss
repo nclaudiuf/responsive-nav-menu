@@ -1,0 +1,404 @@
+a {
+	color: #313131;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:hover a:visited {
+	color: #4b4b4b;
+}
+
+a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:not([href]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bg-light {
+	background-color: #fafafa !important;
+}
+
+.bg-primary {
+	background-color: #ffd717 !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+	background-color: #ffd717 !important;
+}
+
+.bg-secondary {
+	background-color: #313131 !important;
+}
+
+a.bg-secondary:focus,
+a.bg-secondary:hover,
+button.bg-secondary:focus,
+button.bg-secondary:hover {
+	background-color: #313131 !important;
+}
+
+.bg-success {
+	background-color: #14b777 !important;
+}
+
+a.bg-success:focus,
+a.bg-success:hover,
+button.bg-success:focus,
+button.bg-success:hover {
+	background-color: #1e7e34 !important;
+}
+
+.bg-info {
+	background-color: #17a2b8 !important;
+}
+
+a.bg-info:focus,
+a.bg-info:hover,
+button.bg-info:focus,
+button.bg-info:hover {
+	background-color: #117a8b !important;
+}
+
+.bg-warning {
+	background-color: #ffd717 !important;
+}
+
+a.bg-warning:focus,
+a.bg-warning:hover,
+button.bg-warning:focus,
+button.bg-warning:hover {
+	background-color: #d39e00 !important;
+}
+
+.bg-danger {
+	background-color: #f46363 !important;
+}
+
+a.bg-danger:focus,
+a.bg-danger:hover,
+button.bg-danger:focus,
+button.bg-danger:hover {
+	background-color: #bd2130 !important;
+}
+
+.bg-light {
+	background-color: #fbfcfd !important;
+}
+
+a.bg-light:focus,
+a.bg-light:hover,
+button.bg-light:focus,
+button.bg-light:hover {
+	background-color: #dae0e5 !important;
+}
+
+.bg-dark {
+	background-color: #121212 !important;
+}
+
+a.bg-dark:focus,
+a.bg-dark:hover,
+button.bg-dark:focus,
+button.bg-dark:hover {
+	background-color: #0a0c0d !important;
+}
+
+.bg-primary-light {
+	background-color: #121212 !important;
+}
+
+a.bg-primary-light:focus,
+a.bg-primary-light:hover,
+button.bg-primary-light:focus,
+button.bg-primary-light:hover {
+	background-color: #ff5e55 !important;
+}
+
+.bg-secondary-light {
+	background-color: #023047 !important;
+}
+
+a.bg-secondary-light:focus,
+a.bg-secondary-light:hover,
+button.bg-secondary-light:focus,
+button.bg-secondary-light:hover {
+	background-color: #0b0d18 !important;
+}
+
+.bg-white {
+	background-color: #fff !important;
+}
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+.border {
+	border: 1px solid #dee2e6 !important;
+}
+
+.border-top {
+	border-top: 1px solid #dee2e6 !important;
+}
+
+.border-right {
+	border-right: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #dee2e6 !important;
+}
+
+.border-left {
+	border-left: 1px solid #dee2e6 !important;
+}
+
+.text-primary {
+	color: #ffd717 !important;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+	color: #263a83 !important;
+}
+
+.text-secondary {
+	color: #313131 !important;
+}
+
+a.text-secondary:focus,
+a.text-secondary:hover {
+	color: #facf00 !important;
+}
+
+.text-success {
+	color: #14b777 !important;
+}
+
+a.text-success:focus,
+a.text-success:hover {
+	color: #19692c !important;
+}
+
+.text-info {
+	color: #17a2b8 !important;
+}
+
+a.text-info:focus,
+a.text-info:hover {
+	color: #0f6674 !important;
+}
+
+.text-warning {
+	color: #ffd717 !important;
+}
+
+a.text-warning:focus,
+a.text-warning:hover {
+	color: #ba8b00 !important;
+}
+
+.text-danger {
+	color: #f46363 !important;
+}
+
+a.text-danger:focus,
+a.text-danger:hover {
+	color: #a71d2a !important;
+}
+
+.text-light {
+	color: #fbfcfd !important;
+}
+
+a.text-light:focus,
+a.text-light:hover {
+	color: #d6d6d6 !important;
+}
+
+.text-dark {
+	color: #121212 !important;
+}
+
+.text-primary-light {
+	color: #ffdc34 !important;
+}
+
+a.text-primary-light:focus,
+a.text-primary-light:hover {
+	color: #ffe35d !important;
+}
+
+.text-secondary-light {
+	color: #4b4b4b !important;
+}
+
+a.text-secondary-light:focus,
+a.text-secondary-light:hover {
+	color: #a3a3a3 !important;
+}
+
+.text-body {
+	color: #121212 !important;
+}
+
+.text-muted {
+	color: #cccccc !important;
+}
+
+.text-dark-50 {
+	color: rgba(18, 18, 18, 0.5) !important;
+}
+
+.text-white-50 {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-hide {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.btn.btn-primary * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-primary:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-secondary * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-secondary:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-success * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-success:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-info * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-info:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-warning * {
+	fill: #121212;
+}
+
+.btn-outline-warning:hover * {
+	fill: #121212;
+}
+
+.btn.btn-danger * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-danger:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-light * {
+	fill: #121212;
+}
+
+.btn-outline-light:hover * {
+	fill: #121212;
+}
+
+.btn.btn-dark * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-dark:hover * {
+	fill: #fbfcfd;
+}
+
+.btn.btn-primary-light * {
+	fill: #121212;
+}
+
+.btn-outline-primary-light:hover * {
+	fill: #121212;
+}
+
+.btn.btn-secondary-light * {
+	fill: #fbfcfd;
+}
+
+.btn-outline-secondary-light:hover * {
+	fill: #fbfcfd;
+}
+
+.btn-light {
+	border-color: #dee2e6;
+	background: #fbfcfd;
+}
+
+.btn-white {
+	background: #fbfcfd;
+	color: #ffd717;
+}
+
+.btn-white > .icon path {
+	fill: #ffd717;
+}
+
+.btn-white:hover {
+	color: #ffd717;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-outline-white {
+	border-color: #dee2e6;
+}
+
+.text-light .text-muted {
+	color: rgb(204, 204, 204);
+	color: rgba(204, 204, 204, 0.7) !important;
+}
+
+.highlight {
+	display: inline;
+	background: rgba(255, 142, 136, 0.2);
+}
+
+@media only screen and (max-width: 767.9px) {
+	a.text-secondary:hover,
+	button.text-secondary:hover,
+	a.text-secondary:focus,
+	button.text-secondary:focus {
+		color: var(--secondary-light) !important;
+	}
+	a.text-secondary-light:hover,
+	button.text-secondary-light:hover,
+	a.text-secondary-light:focus,
+	button.text-secondary-light:focus {
+		color: var(--neutral-dark) !important;
+	}
+	a.text-dark:hover,
+	button.text-dark:hover,
+	a.text-dark:focus,
+	button.text-dark:focus {
+		color: var(--secondary-light) !important;
+	}
+}

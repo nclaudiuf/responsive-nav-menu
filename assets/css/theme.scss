@@ -1,0 +1,181 @@
+/* 
+	Custom SCSS Design System Developed by Claudiu Furca
+	Licensed under ISC 
+*/
+
+// Global Settings
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-kerning: auto;
+	-webkit-text-size-adjust: 100%;
+}
+*:focus {
+	box-shadow: none !important;
+	outline: none;
+	text-decoration: none;
+}
+
+*:hover {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	outline: none;
+	text-decoration: none;
+}
+
+:root {
+	--neutral-dark: #a3a3a3;
+	--neutral: #cccccc;
+	--neutral-light: #e5e5e5;
+	--light: #fbfcfd;
+	--dark: #121212;
+	--primary: #ffd717;
+	--primary-light: #ffdc34;
+	--secondary: #313131;
+	--secondary-light: #5a5a5a;
+	--success: #14b777;
+	--info: #17a2b8;
+	--danger: #f46363;
+	--blue: #305edb;
+	--indigo: #2f20ed;
+}
+
+$enable-gradients: true;
+$enable-shadows: true;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Spacing
+$spacer: 1rem;
+
+// Utils
+$border-radius-sm: .25rem;
+$border-radius: .375rem;
+$border-radius-lg: .5rem;
+
+// Colors
+$primary: #ffd717;
+$primary-light: #ffdc34;
+$secondary: #313131;
+$secondary-light: #5a5a5a;
+$success: #14b777;
+$dark: #121212;
+$light: #fbfcfd;
+$neutral: #cccccc;
+$neutral-light: #e5e5e5;
+$neutral-dark: #a3a3a3;
+$info: #17a2b8;
+$danger: #f46363;
+$blue: #305edb;
+$indigo: #2f20ed;
+
+// Typography
+$font-weight-lighter: 300;
+$font-weight-light: normal;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: bold;
+$font-family-sans-serif:
+  // Cross-platform generic font family (default user interface font)
+  "Montserrat",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * .875;
+$font-size-md: $font-size-base * 1.125;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-xl: $font-size-base * 1.5;
+$svg-icon-base: 1;
+
+// Page Settings
+$body-color: $secondary;
+$body-bg: $light;
+$body-bg: ease-gradient(
+	60deg,
+	rgba(251, 252, 253, 1),
+	rgba(229, 229, 229, .5)
+);
+$body-text-align: center;
+
+// Inputs & Labels
+$input-btn-font-size-lg: $font-size-lg;
+$input-btn-padding-y-sm: $font-size-sm;
+$input-btn-padding-x-sm: $font-size-base * 2;
+$input-btn-padding-y: $font-size-base;
+$input-btn-padding-x: $font-size-md * 2;
+$input-btn-padding-y-lg: $font-size-md;
+$input-btn-padding-x-lg: $font-size-lg * 2;
+
+// Buttons
+$btn-font-size-lg: $input-btn-font-size-lg;
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-font-weight: 500;
+$btn-letter-spacing: $font-size-base * .125;
+$btn-word-spacing: $spacer / 4;
+
+// Navbar
+$navbar-toggler-focus-width: 88%;
+$navbar-padding-y: $spacer * 1;
+$navbar-padding-x: $spacer * .5;
+$navbar-dropdown-font-size: $font-size-md;
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $primary;
+$navbar-toggler-font-weight: $font-weight-normal;
+
+// Badge
+$badge-color: $secondary-light;
+$badge-bg: $primary;
+$badge-font-weight: $font-weight-bolder;
+
+// Lead Text
+$lead-color: $secondary-light;
+$lead-font-weight: $font-weight-normal;
+
+// Text Font Size
+$subtitle-font-size: $font-size-sm;
+$subtitle-color: $neutral-dark;
+$text-font-size: $font-size-base;
+$text-color: $secondary;
+$text-link-font-size: $font-size-base;
+$text-link-color: $secondary-light;
+
+/* Bootstrap */
+@import '../../scss/bootstrap.scss';
+
+/* Custom Styles */
+@import './components/flexbox.scss';
+// @import './components/colors.scss';
+@import './components/typo.scss';
+@import './components/spacing.scss';
+// @import './components/sisez.scss';
+@import './components/utils.scss';
+@import './components/shadows.scss';
+@import './components/text.scss';
+// @import './components/text-helpers.scss';
+@import './components/buttons.scss';
+// @import './components/button-helpers.scss';
+@import './components/dropdown.scss';
+@import './components/navbar.scss';
+// @import './components/footer.scss';
+@import './components/label.scss';
+@import './components/badge.scss';
+// @import './components/icon.scss';
+@import './components/svg-icon.scss';
+// @import './components/media.scss';
+// @import './components/table.scss';
+@import './components/modal.scss';
+@import './components/calendly-widget.scss';

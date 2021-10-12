@@ -1,0 +1,25 @@
+.lead {
+	color: rgba($lead-color, .75);
+}
+@media (max-width: 768px) {
+	.lead {
+		color: rgba($lead-color, .85);
+	}
+}
+.subtitle {
+	font-size: $subtitle-font-size;
+	color: $subtitle-color;
+}
+.text {
+	font-size: $text-font-size;
+	color: $text-color;
+}
+.text-link {
+	font-size: $text-link-font-size;
+	color: $text-link-color;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}

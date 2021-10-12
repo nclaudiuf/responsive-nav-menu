@@ -1,0 +1,22 @@
+/* icons source tabler-icons.io */
+.svg-icon-sm {
+  transform: scale($svg-icon-base * .875);
+}
+.svg-icon {
+  transform: scale($svg-icon-base);
+}
+.svg-icon-md {
+	transform: scale($svg-icon-base * 1.25);
+}
+.svg-icon-lg {
+	transform: scale($svg-icon-base * 1.5);
+}
+
+@media only screen and (max-width: 768px) {
+	.svg-icon-md {
+		transform: scale($svg-icon-base);
+  }
+  .svg-icon-lg {
+		transform: scale($svg-icon-base * 1.25);
+	}
+}
