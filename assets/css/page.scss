@@ -4,6 +4,10 @@ body {
 	min-height: 72vh;
 }
 
+body, .navbar-container {
+	background-color: #fff !important;
+}
+
 li, a {text-decoration: none !important}
 
 a.hover-effect:hover,
