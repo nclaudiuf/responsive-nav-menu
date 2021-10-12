@@ -13,27 +13,12 @@
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
 
 //import '../../node_modules/bootstrap/js/dist/popper.min.js';
-import '../../node_modules/bootstrap/js/dist/modal.js';
 import '../../node_modules/bootstrap/js/dist/collapse.js';
 import '../../node_modules/bootstrap/js/dist/dropdown.js';
-import lozad from 'lozad';
 
 window.onbeforeunload = () => window.scrollTo(0, 0);
 
-StyleModalCard();
 showSubMenu();
-
-const observer = lozad(); // lazy load
-observer.observe();
-
-function StyleModalCard() {
-	const modal = document.getElementById('cta-modal');
-	const trigger = document.getElementById('cta-btn');
-
-	modal.addEventListener('shown.bs.modal', function () {
-		trigger.focus();
-	});
-}
 
 function showSubMenu() {
 	// make it as accordion for smaller screens
