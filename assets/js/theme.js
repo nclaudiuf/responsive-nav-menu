@@ -21,10 +21,7 @@ import lozad from 'lozad';
 window.onbeforeunload = () => window.scrollTo(0, 0);
 
 StyleModalCard();
-Make3ShadowToText();
-getInTouch_Animation();
 showSubMenu();
-labelAnimation();
 
 const observer = lozad(); // lazy load
 observer.observe();
@@ -36,58 +33,6 @@ function StyleModalCard() {
 	modal.addEventListener('shown.bs.modal', function () {
 		trigger.focus();
 	});
-}
-
-function Make3ShadowToText() {
-	const hero = document.querySelectorAll('.hero')[0];
-	const walk = 32; // px
-
-	const allText = hero.querySelectorAll('span.shadow-effect');
-
-	if (allText.length > 0 && allText.length !== undefined) {
-		allText.forEach(function ApplyShadowEffect(text, index) {
-			function shadow(e) {
-				const {offsetWidth: width, offsetHeight: height} = hero;
-				let {offsetX: x, offsetY: y} = e;
-
-				if (this !== e.target) {
-					x = x + e.target.offsetLeft;
-					y = y + e.target.offsetTop;
-				}
-
-				const xWalk = Math.round((x / width) * walk - walk / 2);
-				const yWalk = Math.round((y / height) * walk - walk / 2);
-
-				text.style.textShadow = `${xWalk}px ${yWalk}px 0 rgba(0,0,0,0.25)`;
-			}
-			hero.addEventListener('mousemove', shadow);
-		});
-	}
-}
-
-function getInTouch_Animation() {
-	const btn = document.getElementById('cta-btn');
-	const overlayImg = document.querySelector('img.content');
-	const textContent = document.querySelector('.hero .content');
-
-	if (textContent !== null && overlayImg !== null && btn !== null) {
-		btn.addEventListener('mouseenter', () => {
-			textContent.classList.add('content--scaleDown');
-			overlayImg.classList.add('img--scaleUp');
-		});
-		btn.addEventListener('mouseleave', () => {
-			overlayImg.classList.toggle('img--scaleUp');
-			textContent.classList.toggle('content--scaleDown');
-
-			overlayImg.classList.add('img--Fallback');
-			textContent.classList.add('content--Fallback');
-
-			setTimeout(() => {
-				textContent.classList.remove('content--Fallback');
-				overlayImg.classList.remove('img--Fallback');
-			}, 451);
-		});
-	}
 }
 
 function showSubMenu() {
@@ -119,24 +64,6 @@ function showSubMenu() {
 					}
 				}
 			});
-		});
-	}
-}
-
-function labelAnimation() {
-	const labels = document.querySelectorAll('.label-animated');
-
-	if (labels !== undefined) {
-		labels.forEach(label => {
-			label.innerHTML =
-				'<div><span>' + label.textContent.trim('').split('').join('</span><span>');
-			label
-				.querySelectorAll('span')
-				.forEach(character =>
-					character.textContent === ' '
-						? character.classList.add('label-spacer')
-						: ''
-				);
 		});
 	}
 }
